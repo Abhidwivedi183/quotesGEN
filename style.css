@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+}
+body{
+  background: #bbc6fa;
+}
+.quotebox{
+  background: #fff;
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
+}
+
+.quotebox h2{
+  font-size: 32px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.quotebox h2::after{
+content: ' ';
+border-radius: 3px;
+height: 3px;
+width: 75px;
+height: 3px;
+background: rgb(23,124,229);
+position: absolute;
+bottom: -10px;
+left: 50%;
+transform: translateX(-50%);
+}
+.quotebox blockquote{
+  font-size: 26px;
+  min-height: 110px;
+}
+.quotebox blockquote::before,.quotebox blockquote::after{
+content: ' "';
+
+}
+.quotebox span{
+
+display: block;
+margin-top: 10px;
+float: right;
+position: relative;
+}
+.quotebox span::before{
+
+  content: ' ';
+  width: 20px;
+  height: 2px;
+  background: rgb(23,124,229);
+  position: absolute;
+  top: 50%;
+  left: -30px;
+
+}
+
+.buttonholder{
+  width: 50%;
+  position: absolute;
+  left:30% ;
+  margin-top: 5px;
+  display: flex;
+ 
+  text-align:center;
+}
+
+
+#gene{
+  margin-right: 12px;
+  font-size: 25px;
+  padding: 8px;
+  outline: 0;
+  border: 1px;
+  border-radius: 7px;
+  background: linear-gradient(25deg,red,blue);
+  cursor: pointer;
+
+}
+
+#Tweet{
+  margin-right: 12px;
+  font-size: 25px;
+  padding: 8px;
+  outline: 0;
+  border: 2px solid blue;
+  border-radius: 7px;
+  background: #ffff;
+  cursor: pointer;
+}
+#Tweet img{
+  width: 20px;
+}
+
+
+
+
+
+
+
+
+
